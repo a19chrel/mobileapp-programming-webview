@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         my_webview = findViewById(R.id.my_webview);
+        my_webview.getSettings().setJavaScriptEnabled(true);
+        
 
         /*
         * Rename your App. Tip: Values->Strings
