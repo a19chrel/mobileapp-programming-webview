@@ -15,14 +15,14 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private WebView my_webview;
+    private WebView myWebView;
 
     public void showExternalWebPage(){
-        my_webview.loadUrl("https://wwwlab.iit.his.se/a19chrel/mobildesign/projekt2/index.html");
+        myWebView.loadUrl("https://wwwlab.iit.his.se/a19chrel/mobildesign/projekt2/index.html");
     }
 
     public void showInternalWebPage(){
-        my_webview.loadUrl("file:///android_asset/index.html");
+        myWebView.loadUrl("file:///android_asset/index.html");
     }
 
     @Override
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        my_webview = findViewById(R.id.my_webview);
-        my_webview.getSettings().setJavaScriptEnabled(true);
+        myWebView = findViewById(R.id.my_webview);
+        myWebView.getSettings().setJavaScriptEnabled(true);
 
         showInternalWebPage();
 
